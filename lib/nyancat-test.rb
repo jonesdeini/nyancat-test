@@ -319,7 +319,7 @@ class MiniTest::Unit
       [t, test_count / t, assertion_count / t]
     final_message = final_message.split(//).map { |c| nyan_cat.send(:rainbowify, c) }.join
 
-    puts "", "", "", "", ""
+    5.times { puts }
     puts final_message
 
     report.each_with_index do |msg, i|
